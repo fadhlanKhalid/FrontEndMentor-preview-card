@@ -31,7 +31,7 @@ body * {
   position: relative;
 }
 .sectionImg .img {
-  background: center/cover url("/images/image-header-mobile.jpg");
+  background: center/cover url("images/mobile_main_index.png");
   width: 100%;
   min-height: 15rem;
 }
@@ -110,7 +110,7 @@ body * {
   }
 
   .sectionImg .img {
-    background: center/cover url("/images/image-header-desktop.jpg");
+    background: center/cover url("images/image-header-desktop.jpg");
     min-width: 33.75rem;
     min-height: 27.875rem;
   }
