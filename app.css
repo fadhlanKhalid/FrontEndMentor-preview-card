@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+/* ################## General ###################### */
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  background-color: hsl(233, 47%, 7%);
+  height: 120vh;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  height: 100%;
+}
+.container {
+  background-color: hsl(244, 38%, 16%);
+  max-width: 20.4375rem;
+}
+/* ################## Image Section ###################### */
+.sectionImg {
+  position: relative;
+}
+.sectionImg .img {
+  background: center/cover url("/images/image-header-mobile.jpg");
+  width: 100%;
+  min-height: 15rem;
+}
+
+.sectionImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(277, 80%, 66%, 0.507);
+}
+
+/* ################## Copywriting Section ###################### */
+.sectionCopy {
+  margin: 43px 35px;
+}
+
+.sectionCopy .title {
+  font-weight: 700;
+  font-size: 1.7em;
+  margin: 1.3125rem 0;
+}
+
+.sectionCopy .title span {
+  color: hsl(277, 80%, 66%);
+}
+
+.sectionCopy .content {
+  font-family: "Lexend Deca" sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.sectionCopy .stats > div {
+  margin: 35px 0;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.0625rem;
+}
+
+.sectionCopy .stats .stats-keyword {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+/* ################## Border Radius ###################### */
+
+.container {
+  border-radius: 1rem;
+}
+
+.sectionImg,
+.img,
+.sectionImg::before {
+  border-radius: 1rem 1rem 0 0;
+}
+
+/* mobile */
+@media (max-width: 599px) {
+}
+
+/* tablet-portrait-up */
+@media (min-width: 600px) {
+}
+/* table-landscape-up */
+@media (min-width: 900px) {
+  .container {
+    max-height: 446px;
+    max-width: 69.7rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .sectionImg .img {
+    background: center/cover url("/images/image-header-desktop.jpg");
+    min-width: 33.75rem;
+    min-height: 27.875rem;
+  }
+  .sectionCopy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 4.375rem;
+  }
+  .sectionCopy .stats {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .sectionCopy .stats > div:nth-of-type(2) {
+    margin: 0 3.75rem;
+  }
+
+  .sectionCopy .title {
+    font-size: 2.5em;
+  }
+
+  .sectionCopy .content {
+    font-size: 1.1em;
+  }
+
+  .container {
+    border-radius: 1rem;
+  }
+
+  .sectionImg,
+  .img,
+  .sectionImg::before {
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+/* desktop-up */
+@media (min-width: 1200px) {
+}
+/* big-desktop-up */
+@media (min-width: 1800px) {
+}
